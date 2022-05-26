@@ -8,13 +8,24 @@ def principal():
 
 @app.route('/enviar')
 def enviar():
-    return;
+    return  render_template('enviar.html');
 
 @app.route('/borrar')
 def borrar():
-    return;
+    return  render_template('borrar.html');
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
 
-miLista = [ ]    
+   
+def listToString(lista): 
+    
+    str1 = " " 
+    
+    # return string  
+    return (str1.join(lista))
+        
+        
+# Driver code    
+miLista = [ "HolaMundo", "HolaMundo2"] 
+print(listToString(miLista))
