@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def principal():
-    return;
+    return  render_template('mostrar.html');
 
 @app.route('/enviar')
 def enviar():
