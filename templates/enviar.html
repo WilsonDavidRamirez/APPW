@@ -10,22 +10,22 @@
 <body>
     <center>
         <h1>pagina prueba</h1> 
+
         <div class="container">
-            <input class="form-control form-control-lg" type="text" placeholder="Tarea" aria-label=".form-control-lg example">
-            <input class="form-control" type="text" placeholder="Correo de tarea" aria-label="default input example">
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dificultad
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item">Facil</a></li>
-                  <li><a class="dropdown-item">Medio</a></li>
-                  <li><a class="dropdown-item">Dificil</a></li>
-                </ul>
-              </div>
+            
+            <form action="">
+                <input class="form-control form-control-lg" id="GET-name" type="text" placeholder="Tarea" aria-label=".form-control-lg example" name="name">
+                <input class="form-control" id="GET-email" type="text" placeholder="Correo de tarea" aria-label="default input example" name="email">
+                <select name="dificultad" id="dificultad">
+                    <option value="f">Facil</option>
+                    <option value="m">Medio</option>
+                    <option value="d">Dificl</option>
+                </select>
+                <input type="submit" value="Save">
+            </form>
           </div><br>
         <a href="../">
-            <input type="button" value="Agregar">
+            <input type="button" value="regresar">
         </a>
     </center>
     
